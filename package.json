@@ -1,9 +1,11 @@
 {
   "name": "js-tdd-course",
   "version": "1.0.0",
-  "description": "Nossa biblioteca do curso de JS com TDD na prática.",
+  "description": "One Paragraph of project description goes here",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +26,7 @@
   "devDependencies": {
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
-  },
-  "dependencies": {
-    "editorconfig": "^0.15.3"
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^5.0.9"
   }
 }
